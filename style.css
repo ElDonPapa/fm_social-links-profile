@@ -28,11 +28,12 @@
 
     --ff-primary: "Inter";
 
-    --fs-300: 0.875rem;
     --fs-500: 1.5rem;
+    --fs-300: 0.875rem;
 
     --space-500: 2.5rem;
     --space-300: 1.5rem;
+    --space-200: 1rem;
     --space-150: 0.75rem;
     --space-100: 0.5rem;
     --space-50: 0.25rem;
@@ -90,5 +91,79 @@ table {
 /*CSS RESET*/
 
 body {
+    background-color: var(--grey-900);
     font-family: "Inter";
+    line-height: 150%;
+    font-size: var(--fs-300);
+    color: white;
+    padding: 0 var(--space-300);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-300);
+    border-radius: 0.75rem;
+    padding: var(--space-500);
+    background-color: var(--grey-800);
+    min-width: min-content;
+    width: 384px;
+}
+
+.card__portrait {
+    border-radius: 999rem;
+}
+
+.card__infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-150);
+}
+
+.card__infos h1 {
+    font-size: var(--fs-500);
+    font-weight: 600;
+}
+
+.card__infos p {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.card__links {
+    width: 100%;
+}
+
+.card__links ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+}
+
+.card__links a {
+    display: inline-block;
+    text-align: center;
+    padding: var(--space-150) 0;
+    border-radius: var(--space-100);
+    width: 100%;
+    background-color: var(--grey-700);
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.card__links a:hover {
+    color: var(--grey-700);
+    background-color: var(--green);
 }
