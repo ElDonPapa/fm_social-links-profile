@@ -30,6 +30,7 @@
 
     --fs-500: 1.5rem;
     --fs-300: 0.875rem;
+    --fs-100: 0.75rem;
 
     --space-500: 2.5rem;
     --space-300: 1.5rem;
@@ -91,16 +92,20 @@ table {
 /*CSS RESET*/
 
 body {
+    display: flex;
+    flex-direction: column;
     background-color: var(--grey-900);
     font-family: "Inter";
     line-height: 150%;
     font-size: var(--fs-300);
     color: white;
     padding: 0 var(--space-300);
+    height: 100vh;
 }
 
 main {
     display: flex;
+    flex-grow: 1;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -170,8 +175,26 @@ main {
     background-color: var(--green);
 }
 
+footer {
+    text-align: center;
+    padding: var(--space-300);
+}
+
+footer a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 @media screen and (width <= 425px) {
     .card {
         padding: var(--space-300);
+    }
+
+    footer {
+        font-size: var(--fs-100);
     }
 }
