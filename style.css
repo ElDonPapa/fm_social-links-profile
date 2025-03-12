@@ -161,9 +161,11 @@ main {
     text-decoration: none;
     font-weight: bold;
     color: white;
+    transition: all 0.3s ease;
 }
 
-.card__links a:hover {
+.card__links a:hover,
+.card__links a:focus {
     color: var(--grey-700);
     background-color: var(--green);
 }
