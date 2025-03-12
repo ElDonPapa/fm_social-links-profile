@@ -177,7 +177,7 @@ main {
 
 footer {
     text-align: center;
-    padding: var(--space-300);
+    padding: var(--space-300) 0;
 }
 
 footer a {
