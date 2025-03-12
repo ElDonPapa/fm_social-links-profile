@@ -169,3 +169,9 @@ main {
     color: var(--grey-700);
     background-color: var(--green);
 }
+
+@media screen and (width <= 425px) {
+    .card {
+        padding: var(--space-300);
+    }
+}
